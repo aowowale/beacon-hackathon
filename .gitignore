@@ -40,3 +40,7 @@ dist-ssr
 *.pfx
 secrets.json
 appsettings.*.local.json
+
+# Hackathon submission/recording scripts (kept local, not in repo)
+docs/video-script.md
+docs/submission-copy.md
