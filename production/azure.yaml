@@ -1,0 +1,13 @@
+# Azure Developer CLI (azd) manifest for Beacon.
+# Usage: azd up   (provisions infra + deploys the API container)
+name: beacon
+metadata:
+  template: beacon@1.0.0
+services:
+  api:
+    project: ./api
+    language: ts
+    host: containerapp
+    docker:
+      path: ./Dockerfile
+      context: ./api

@@ -1,0 +1,10 @@
+node_modules
+dist
+production/api/node_modules
+production/api/dist
+production/infra
+**/*.log
+.git
+.github
+docs
+*.png

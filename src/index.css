@@ -1,0 +1,73 @@
+:root {
+  color-scheme: light;
+  --cp-bg: #f7f4ef;
+  --cp-bg-elevated: #fcfbf8;
+  --cp-surface: #ffffff;
+  --cp-surface-soft: #f5f5f5;
+  --cp-border: #e4e0d9;
+  --cp-border-strong: #b8b0a4;
+  --cp-text: #242424;
+  --cp-text-muted: #5c5c5c;
+  --cp-text-soft: #6f6f6f;
+  --cp-accent: #b11f4b;
+  --cp-accent-hover: #9a1a41;
+  --cp-accent-soft: rgba(177, 31, 75, 0.08);
+  --cp-accent-fg: #ffffff;
+  --cp-success: #16a34a;
+  --cp-danger: #dc2626;
+  --cp-warning: #f59e0b;
+  --cp-link: #0078d4;
+  --cp-shadow: 0 18px 48px rgba(0, 0, 0, 0.12);
+  --cp-shadow-sm: 0 1px 2px rgba(24, 20, 14, 0.05), 0 1px 3px rgba(24, 20, 14, 0.04);
+  --cp-shadow-md: 0 6px 16px rgba(24, 20, 14, 0.08), 0 2px 6px rgba(24, 20, 14, 0.05);
+  --cp-overlay: rgba(255, 255, 255, 0.8);
+  --cp-panel: rgba(255, 255, 255, 0.86);
+  --cp-panel-strong: rgba(255, 255, 255, 0.96);
+  --cp-sheen: rgba(255, 255, 255, 0.55);
+  --cp-highlight: rgba(177, 31, 75, 0.12);
+  --cp-radius: 14px;
+  --cp-radius-sm: 9px;
+  --cp-radius-xs: 6px;
+  --cp-font-display: "Segoe UI Variable Display", "Segoe UI", Aptos, Calibri, system-ui, sans-serif;
+  --cp-ease: cubic-bezier(0.16, 1, 0.3, 1);
+  font-family: "Segoe UI Variable Text", "Segoe UI", Aptos, Calibri, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--cp-text);
+  background: var(--cp-bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --cp-bg: #211f1d;
+  --cp-bg-elevated: #2a2724;
+  --cp-surface: #302d29;
+  --cp-surface-soft: #383430;
+  --cp-border: #423d37;
+  --cp-border-strong: #635b51;
+  --cp-text: #ece7e0;
+  --cp-text-muted: #a39a8d;
+  --cp-text-soft: #bcb3a6;
+  --cp-accent: #ff9e8a;
+  --cp-accent-hover: #ffb0a0;
+  --cp-accent-soft: rgba(255, 158, 138, 0.13);
+  --cp-accent-fg: #241410;
+  --cp-success: #6ee7a8;
+  --cp-danger: #f87171;
+  --cp-warning: #fbbf24;
+  --cp-link: #7cc0ff;
+  --cp-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+  --cp-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.24);
+  --cp-shadow-md: 0 10px 26px rgba(0, 0, 0, 0.38), 0 3px 8px rgba(0, 0, 0, 0.3);
+  --cp-overlay: rgba(20, 18, 16, 0.9);
+  --cp-panel: rgba(42, 39, 36, 0.72);
+  --cp-panel-strong: rgba(42, 39, 36, 0.96);
+  --cp-sheen: rgba(255, 255, 255, 0.04);
+  --cp-highlight: rgba(255, 158, 138, 0.14);
+}
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; background: var(--cp-bg); }
+button, textarea, select { font: inherit; }
+button { cursor: pointer; }
+button:focus-visible, textarea:focus-visible, select:focus-visible, summary:focus-visible, a:focus-visible { outline: 2px solid var(--cp-accent); outline-offset: 2px; border-radius: var(--cp-radius-xs); }
+::selection { background: var(--cp-highlight); }
